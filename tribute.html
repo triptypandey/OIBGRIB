@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute</title>
+    <link rel="stylesheet" href="./tribute.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-container">
+            <img src="Dhoni-1024x682.jpg" alt="Image">
+        </div>
+        <div class="right-container">
+            <div class="content-container">
+                <h1>MAHENDRA SINGH DHONI</h1>
+                <h5>1981-present</h5>
+                <hr>
+                <p>Mahendra Singh Dhoni, one of the greatest cricketers from India did not really have a huge interest in cricket from his childhood. Dhoni initially played badminton and football, at the district and club level. It was while he was playing football as a goal keeper, he was selected by his coach to play as a wicket-keeper in the local cricket club. As he started wicket-keeping regularly for the local club, he honed his cricketing skills and was regularly selected in club cricket. Dhoni hails from a lower-middle class family and his father Pan Singh was employed at the junior level at MECON. Hence to support himself and his family, Dhoni  took up the job of a train ticket examiner or TTE in the Indian Railways. Dhoni worked as a Railways Ticket Examiner during the years 2000 to 2003 and was selected for the Indian Cricket Team in the year 2004. Today Mahendra Singh Dhoni is the captain of Indian Cricket Team in all three forms of the game, and his records are the best among all Indian captains to date..</p>
+            </div>
+            <button onclick="displayToggle()">More</button>
+        </div>
+    </div>
+    <div class="extra-container">
+        <div class="extra-inner">
+            <h3>Biography</h3>
+            <p>Mahendra Singh Dhoni or as he is commonly known as MS Dhoni is an Indian cricketer who represents India on the International stage. On the domestic level, Dhoni plays first-class cricket for Jharkhand.Dhoni was born on 7 July 1981 in Ranchi, Bihar (now in Jharkhand). He was raised in a Hindu Rajput family. His parents belonged to the village of Lwali is in the Lamgara block of Almora District, Uttarakhand. Dhoni’s father, Pan Singh worked in junior management positions in MECON.</p>
+        </div>
+        <div class="extra-inner">
+            <h3>Achievements</h3>
+            <p>MSD led India to number 1 in test ranking for the first time ever in 2009.
+                Dhoni remains the most successful Indian Test captain with 27 Test wins.
+                He is the first Indian wicket-keeper to score 4,000 test runs.
+                Dhoni’s 224 against Australia is the third-highest score by an Indian captain,  highest Test score by an Indian wicket-keeper, and the highest score by a wicket-keeper–captain.
+                Dhoni’s century against Pakistan (148) is the fastest century scored by an Indian wicket-keeper and fourth overall.
+                With 294 dismissals in his career, Dhoni tops the all-time dismissals list by Indian wicket-keepers.
+                Dhoni has the most stumpings (38) to his name by any wicket-keeper in tests.
+                He holds the record for most scalps in an innings (6) and in a match (9) by an Indian wicket-keeper.
+                Dhoni is the third captain overall to win 100 games.</p>
+        </div>
+    </div>
+    <script>
+        function displayToggle(){
+            const div = document.querySelector('.extra-container');
+            const btn = document.querySelector('button');
+            if(div.style.display==='none'){
+                div.style.display = 'block';
+                btn.innerHTML = 'Less';
+            }
+            else{
+                div.style.display = 'none';
+                btn.innerHTML = 'More';
+            }
+        }
+    </script>
+</body>
+</html>
